@@ -24,15 +24,61 @@
               <img src="assets/images/svg/logo.svg" width="92" height="82" alt="MEVRON" />
             </a>
 
-            <a class="header-action header-action--language" href="#" aria-label="Change language">
+            <button
+              class="header-action header-action--language"
+              type="button"
+              aria-expanded="false"
+              aria-controls="language-panel"
+              data-language-toggle
+            >
               <img src="assets/images/svg/language.svg" width="42" height="43" alt="" />
               <span>
                 <strong>EN</strong>
                 <small>&amp; other sites</small>
               </span>
-            </a>
+            </button>
           </div>
         </header>
+
+        <section class="language-panel" id="language-panel" aria-hidden="true" data-language-panel>
+          <div class="language-panel__inner">
+            <div class="language-panel__top">
+              <h2>Select your language.</h2>
+              <button
+                class="language-panel__close"
+                type="button"
+                aria-label="Close language menu"
+                data-language-close
+              ></button>
+            </div>
+
+            <div class="language-grid" aria-label="Regional sites">
+              <a class="language-card" href="#" aria-label="Go to Dubai site">
+                <span class="language-card__code">EN</span>
+                <strong>Dubai</strong>
+                <span class="language-card__country">UAE</span>
+                <span class="language-card__description">GCC sales &amp; service</span>
+                <span class="language-card__link">Go to site <i aria-hidden="true"></i></span>
+              </a>
+
+              <a class="language-card" href="#" aria-label="Go to Moscow site">
+                <span class="language-card__code">RU</span>
+                <strong>Moscow</strong>
+                <span class="language-card__country">Russia</span>
+                <span class="language-card__description">CIS sales &amp; parts</span>
+                <span class="language-card__link">Go to site <i aria-hidden="true"></i></span>
+              </a>
+
+              <a class="language-card" href="#" aria-label="Go to Beijing site">
+                <span class="language-card__code">CN</span>
+                <strong>Beijing</strong>
+                <span class="language-card__country">China</span>
+                <span class="language-card__description">Engineering &amp; manufacturing</span>
+                <span class="language-card__link">Go to site <i aria-hidden="true"></i></span>
+              </a>
+            </div>
+          </div>
+        </section>
 
         <div class="container hero-container">
           <p class="hero-kicker">Mining &amp; industrial equipment.</p>
