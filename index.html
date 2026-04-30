@@ -12,13 +12,27 @@
       <section class="hero">
         <header class="site-header">
           <div class="container header-container">
-            <a class="header-action" href="#" aria-label="Explore capabilities">
+            <button
+              class="header-action header-action--explore"
+              type="button"
+              aria-expanded="false"
+              aria-controls="explore-panel"
+              data-explore-toggle
+            >
               <img src="assets/images/svg/menu.svg" width="40" height="40" alt="" />
               <span>
                 <strong>EXPLORE</strong>
                 <small>&amp; see all capabilities</small>
               </span>
-            </a>
+            </button>
+
+            <button class="header-action header-action--close" type="button" data-explore-close>
+              <img src="assets/images/svg/close.svg" width="40" height="40" alt="" />
+              <span>
+                <strong>CLOSE</strong>
+                <small>&amp; back to main</small>
+              </span>
+            </button>
 
             <a class="site-logo" href="/" aria-label="MEVRON home">
               <img src="assets/images/svg/logo.svg" width="92" height="82" alt="MEVRON" />
@@ -39,6 +53,59 @@
             </button>
           </div>
         </header>
+
+        <section class="explore-panel" id="explore-panel" aria-hidden="true" data-explore-panel>
+          <div class="explore-panel__content">
+            <div class="explore-panel__top">
+              <button class="explore-close" type="button" data-explore-close>
+                <img src="assets/images/svg/close.svg" width="40" height="40" alt="" />
+                <span>
+                  <strong>CLOSE</strong>
+                  <small>&amp; back to main</small>
+                </span>
+              </button>
+
+              <a class="explore-quote" href="#request">
+                <span>Request a quote</span>
+                <i aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <nav class="explore-nav" aria-label="Explore navigation">
+              <a href="#top">
+                <strong>HOME</strong>
+                <em aria-hidden="true"></em>
+              </a>
+              <a href="#about">
+                <strong>ABOUT US</strong>
+                <em aria-hidden="true"></em>
+              </a>
+              <a href="#services">
+                <strong>SERVICES</strong>
+                <em aria-hidden="true"></em>
+              </a>
+              <a href="#where-to-buy">
+                <strong>WHERE TO BUY</strong>
+                <em aria-hidden="true"></em>
+              </a>
+              <a href="#request">
+                <strong>REQUEST</strong>
+                <em aria-hidden="true"></em>
+              </a>
+            </nav>
+
+            <div class="explore-contacts">
+              <p>
+                <span>Telegram:</span>
+                <a href="https://t.me/mevronsales">@mevronsales</a>
+              </p>
+              <p>
+                <span>Direct mail:</span>
+                <a href="mailto:sales@mevron.ru">sales@mevron.ru</a>
+              </p>
+            </div>
+          </div>
+        </section>
 
         <section class="language-panel" id="language-panel" aria-hidden="true" data-language-panel>
           <div class="language-panel__inner">
